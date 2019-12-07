@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* BODY */
+body {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-attachment: fixed;
+	font-family: 'Alatsi', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	margin: auto;
+
+}
+
+/* JUMP */
+.h1 {
+	position: absolute;
+	margin: auto;	
+	width: 100%;
+	text-align: center;
+	top: 20px;
+	-webkit-animation: bounce 0.4s infinite alternate;
+	color: #4A4DFF;
+	
+}
+
+.login-all {
+	position: absolute;
+	width: 150px;
+	height: auto;
+	border: 3px solid #373ABF;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #373ABF;
+	
+}
+.login-all a {
+	text-decoration: none;
+}
+
+.h1-jump {
+	font-size: 80px;
+}
+/* Animation FF00YTR */
+.h1-jump:nth-child(1) {
+	-webkit-animation-delay: 0.1s;
+}
+
+.h1-jump:nth-child(2) {
+	-webkit-animation-delay: 0.2s;
+}
+
+/* Instruction */
+	/* jumping letters:
+	
+	Plik css:
+	.h1-jump:nth-child(2) {
+  		-webkit-animation-delay: 0.1s;
+	.h1-jump:nth-child(3) {
+  		-webkit-animation-delay: 0.2s;
+	.h1-jump:nth-child(4) {
+  		-webkit-animation-delay: 0.3s;
+	itd.
+	Plik html
+	<h1>
+		<span>&letter</span>
+		<span>&letter</span>
+		<span>&letter</span>
+	</h1>
+*/
+
+/* animation */
+@-webkit-keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #373ABF, 0 2px 0 #373ABF, 0 3px 0 #373ABF, 0 4px 0 #373ABF,
+      0 5px 0 #373ABF, 0 6px 0 #373ABF, 0 7px 0 #373ABF, 0 8px 0 #373ABF, 0 9px 0 #373ABF,
+      0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}
